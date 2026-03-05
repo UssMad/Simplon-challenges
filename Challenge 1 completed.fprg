@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Age - Vote"/>
+        <attribute name="authors" value="Devin Cook"/>
+        <attribute name="about" value="This simple example inputs an age from the user and then tells them to go vote (if they are 18 years or older) or stay home."/>
+        <attribute name="saved" value="2026-03-05 02:18:53 PM"/>
+        <attribute name="created" value="em9ybztERVNLVE9QLU4wVlA0N047MjAyNi0wMy0wNTsxMToxNzoxNSBBTTsyNzgx"/>
+        <attribute name="edited" value="em9ybztERVNLVE9QLU4wVlA0N047MjAyNi0wMy0wNTswMjoxODo1MyBQTTs2OzI5MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;What is the price of the tea ?&quot;" newline="True"/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <input variable="price"/>
+            <output expression="&quot;How much cup of tea did you order ?&quot;" newline="True"/>
+            <declare name="orders" type="Real" array="False" size=""/>
+            <input variable="orders"/>
+            <output expression="&quot;Are you a student ?&quot;" newline="True"/>
+            <declare name="student" type="Boolean" array="False" size=""/>
+            <input variable="student"/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="price * orders"/>
+            <if expression="student">
+                <then>
+                    <assign variable="total" expression="total * 0.8"/>
+                </then>
+                <else>
+                    <assign variable="total" expression="total"/>
+                </else>
+            </if>
+            <if expression="orders &gt;= 5">
+                <then>
+                    <assign variable="total" expression="total - (orders * 1)"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot; Your total is :&quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
