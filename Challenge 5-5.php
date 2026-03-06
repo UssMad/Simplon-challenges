@@ -1,11 +1,7 @@
-<?php  
-
-$star = 1;
-While ($star<=10) {
-    $star ++;
+<?php
+$i = 0;
+while ($i < 10) {
     echo "*";
+    $i++;
 }
-
-
-
 ?>
