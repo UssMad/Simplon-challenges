@@ -1,16 +1,12 @@
 <?php
 
-$count = 0;
-$i = 1;
-
-while ($i <= 50) {
-
-    if ($i % 2 == 0) {
-        $count++;
+function multiplyNumbers($a, $b) {
+    if (is_int($a) && is_int($b)) {
+        return $a * $b;
+    } else {
+        return "Error: Invalid Input";
     }
-
-    $i++;
 }
-
-echo "Total even numbers: " . $count;
+echo multiplyNumbers(5, 10) . "\n";
+echo multiplyNumbers(5,"apple");
 ?>

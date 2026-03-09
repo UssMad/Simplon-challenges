@@ -1,9 +1,10 @@
 <?php
 
-$num=10;
-while ($num >= 1 ) {
-    $num--;
-    echo $num . "\n";
+function calculateArea($width, $height) {
+    $totalArea = $width * $height;
+    return $totalArea;
 }
+
+echo calculateArea(5, 10);
 
 ?>
