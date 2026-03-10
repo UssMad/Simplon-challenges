@@ -46,5 +46,15 @@ if ($sort == "desc") {
 foreach ($products as $product) {
     echo $product["name"] . " (" . $product["category"] . ")<br>";
 }
-
 ?>
+<h3>Filter</h3>
+
+<a href="?category=tech">Tech</a><br>
+<a href="?category=office">Office</a><br>
+
+<br>
+
+<h3>Sort</h3>
+
+<a href="?sort=asc">Sort A → Z</a><br>
+<a href="?sort=desc">Sort Z → A</a>
