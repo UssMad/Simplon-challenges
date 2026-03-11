@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    // email validation
+    
     if (strpos($email, "@") === false) {
         $error = "Email must contain @";
     } else {
