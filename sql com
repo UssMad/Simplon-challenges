@@ -1,0 +1,25 @@
+SELECT Title, Author, Price FROM library_books;
+---------------------------
+SELECT FROM library_books
+WHERE Price >= 100 AND Price <= 300 ;
+---------------------------
+SELECT * FROM library_books;
+WHERE Published_year >= 2020
+---------------------------
+SELECT *
+FROM books
+WHERE title LIKE '%PHP%';
+---------------------------
+SELECT *
+FROM books
+WHERE status != 'Lost'
+ORDER BY published_year DESC;
+---------------------------
+SELECT DISTINCT author
+FROM books;
+---------------------------
+SELECT 
+    UPPER(title) AS book_title,
+    ROUND(price) AS rounded_price
+FROM 
+    books;
