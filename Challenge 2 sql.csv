@@ -1,0 +1,9 @@
+ID,Title,Author,Published_year,Status_,Price
+1,"The Lion, the Witch and the Wardrobe","C.S. Lewis",1950,NULL,12.99
+2,1984,"George Orwell",1949,NULL,10.50
+3,"Animal Farm","George Orwell",1945,NULL,9.20
+4,"The Hobbit","J.R.R. Tolkien",1937,NULL,15.00
+5,Dune,"Frank Herbert",1965,NULL,18.75
+6,"The Catcher in the Rye","J.D. Salinger",1951,NULL,11.40
+7,"To Kill a Mockingbird","Harper Lee",1960,NULL,NULL
+8,"Fahrenheit 451","Ray Bradbury",1953,NULL,13.60
