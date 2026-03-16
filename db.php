@@ -6,13 +6,13 @@ $username = "root";
 $password = "";     
 
 try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully"; 
-}
-catch(PDOException $e)
-{
-    die("Connection failed: " . $e->getMessage());
+    $conn = mysqli_connect($host, $username, $password, $dbname);
+    
+} catch (mysqli_sql_exception ) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
+if ($conn) {
+    echo " Connected successfully";
+}
 ?>
